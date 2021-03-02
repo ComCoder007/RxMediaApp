@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.13">
+
+                    <com.rxmediaapp.customfonts.CustomEditText
+                        android:id="@+id/reflabname_edtx"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="14dp"
+                        android:imeOptions="actionDone"
+                        android:hint="Refer to Lab Name *"
+                        android:background="@drawable/edittext_bg"
+                        android:singleLine="true"
+                        android:textColor="@color/txt_clr"
+                        android:textColorHint="@color/hintcolor"/>
+
+                    <com.rxmediaapp.customfonts.CustomEditText
+                        android:id="@+id/reftestname_edtx"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="14dp"
+                        android:imeOptions="actionDone"
+                        android:layout_marginTop="10dp"
+                        android:hint="Test Name *"
+                        android:background="@drawable/edittext_bg"
+                        android:singleLine="true"
+                        android:textColor="@color/txt_clr"
+                        android:textColorHint="@color/hintcolor"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <com.rxmediaapp.customfonts.CustomNormalButton
+                    android:id="@+id/ref_save_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/doc_bg_clr"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+
+                    android:text="Save"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:visibility="visible" />
+                <ImageView
+                    android:id="@+id/ref_del_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:padding="3dp"
+
+                    android:src="@drawable/deleteicon"
+                    android:tint="@color/txt_clr" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

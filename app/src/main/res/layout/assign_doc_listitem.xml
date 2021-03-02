@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/assigndoc_listlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:layout_marginBottom="5dp">
+
+        <CheckBox
+            android:id="@+id/assign_doc_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:textSize="15dp" />
+
+        <com.rxmediaapp.customfonts.CustomRegularTextView
+            android:id="@+id/assigtndoc_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="-"
+            android:textSize="14dp"
+            android:clickable="false"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:layout_weight="0.15"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

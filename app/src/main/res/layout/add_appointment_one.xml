@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/heatbeat"/>
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/pat_mbile_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+
+                android:maxLength="10"
+                android:hint="@string/mandatory_mbile_num"
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/select_patient_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:layout_marginTop="15dp"
+                android:hint="Select"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:drawableRight="@drawable/dropdown"
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+
+
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Name :"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="14dp" />
+
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/appointment_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="  Patient Name"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Gender :"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/appointment_gender_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="  Male"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Blood Group :"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/appointment_bloodgroup_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="  O+"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Age :"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/appointment_age_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="  25 Years"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Last Consulted Date :"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/appointment_consultdate_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="  02-02-2020"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/appointment_dueto_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:gravity="start"
+                    android:imeOptions="actionDone"
+                android:lines="3"
+                android:hint="@string/dueto"
+                android:background="@drawable/edittext_bg"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+            <LinearLayout
+                android:id="@+id/addphy_ex_lay"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/theme_background"
+                android:gravity="center_vertical">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:clickable="false"
+                    android:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/globe"/>
+
+
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addphy"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:textColor="@color/txt_clr"
+                    android:textSize="14dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:clickable="false"
+                    android:gravity="right">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:clickable="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:tint="@color/colorPrimaryDark"
+                        android:rotation="180"
+                        android:src="@drawable/back_button"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.rxmediaapp.customfonts.CustomButton
+                android:id="@+id/addapp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="30dp"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+                android:text="@string/addapp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_bg_clr"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

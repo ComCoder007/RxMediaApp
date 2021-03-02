@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/theme_background"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:orientation="vertical">
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/diagnose_listitem_report_date_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableRight="@drawable/calendericon"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/report_date"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/diagnose_list_item_name_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/diagnname"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/diagnose_listitem_test_nme_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/testname"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/theme_background"
+                    android:orientation="vertical">
+
+                    <com.rxmediaapp.customfonts.CustomMediumTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Scanned Copy"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/attach_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="start"
+                            android:src="@drawable/heatbeat" />
+
+                        <com.rxmediaapp.customfonts.CustomButton
+                            android:id="@+id/browse_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/simple_button_bg"
+                            android:text="@string/browse"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/diagnose_listitem_remark_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="top|left"
+                    android:hint="Remark"
+
+                    android:imeOptions="actionDone"
+                    android:lines="2"
+                    android:padding="10dp"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <com.rxmediaapp.customfonts.CustomNormalButton
+                        android:id="@+id/t_save_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/doc_bg_clr"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+
+                        android:text="Save"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:visibility="visible" />
+                    <ImageView
+                        android:id="@+id/med_del_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:padding="3dp"
+
+                        android:src="@drawable/deleteicon"
+                        android:tint="@color/txt_clr" />
+
+                </LinearLayout>
+
+                
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

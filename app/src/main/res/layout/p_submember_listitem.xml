@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:elevation="0dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:id="@+id/p_submember_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.rxmediaapp.circularimageview.CircularImageView
+                    android:id="@+id/submember_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    android:src="@drawable/sample_profile"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+                            <com.rxmediaapp.customfonts.CustomBoldTextView
+                                android:id="@+id/submem_relation_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:textColor="@color/black"
+                                android:text=""
+                                android:textSize="14dp" />
+                            <com.rxmediaapp.customfonts.CustomBoldTextView
+                                android:id="@+id/submem_name_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="14dp" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.75"
+                            android:gravity="right|center"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:rotation="270"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+
+                                android:src="@drawable/dropdown_icon"
+                                android:tint="@color/lght_blck_clr"
+                                android:gravity="end"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/regon"
+                                android:textColor="@color/form_text_color"
+                                android:textSize="12dp" />
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:id="@+id/submem_date_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text=""
+                                android:layout_marginLeft="3dp"
+                                android:textColor="@color/form_text_color"
+                                android:textSize="12dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/submem_edit_img"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@drawable/editimage"
+                                android:layout_marginRight="7dp"
+                                android:tint="@color/lght_blck_clr"
+                                android:gravity="end"/>
+
+                            <ImageView
+                                android:id="@+id/submem_del_img"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_marginRight="5dp"
+                                android:padding="2dp"
+                                android:src="@drawable/deleteicon"
+                                android:tint="@color/lght_blck_clr"
+                                android:gravity="end"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

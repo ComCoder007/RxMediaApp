@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/add_appointment_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/doc_bg_clr"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <com.rxmediaapp.customfonts.CustomRegularTextView
+            android:id="@+id/ad_patntnme_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ad_doc_up_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:tint="@color/white"
+                android:rotation="180"
+                android:visibility="visible"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/back_button"/>
+
+            <ImageView
+                android:id="@+id/ad_doc_down_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:tint="@color/white"
+                android:rotation="270"
+                android:visibility="gone"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/back_button"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/appointment_innerlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp">
+
+        <com.rxmediaapp.customfonts.CustomEditText
+            android:id="@+id/search_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="@string/mandatory_mobile"
+            android:inputType="number"
+            android:background="@drawable/edittext_bg"
+            android:singleLine="true"
+            android:textColor="@color/txt_clr"
+            android:textColorHint="@color/hintcolor"/>
+
+
+        <com.rxmediaapp.customfonts.CustomButton
+            android:id="@+id/pat_search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg_clr"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

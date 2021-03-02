@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/pf_logo_lay"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:gravity="start"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/button_bg_circle"
+                    android:layout_gravity="center"
+                    android:padding="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    android:src="@drawable/add"/>
+
+
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logo"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:textColor="@color/txt_clr"
+                    android:layout_toRightOf="@+id/add_circle"
+                    android:padding="5dp"
+                    android:textSize="15dp"/>
+
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/logo_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="start"/>
+
+            <com.rxmediaapp.customfonts.CustomButton
+                android:id="@+id/logo_browse_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="14dp"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:textAllCaps="false"
+                android:text="@string/browse"
+                android:textColor="@color/white"
+                android:background="@drawable/simple_button_bg"
+                android:layout_marginLeft="8dp" />
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/header_lay"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:gravity="start"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/add_circle"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/button_bg_circle"
+                    android:layout_gravity="center"
+                    android:padding="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    android:src="@drawable/add"/>
+
+
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/header"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:textColor="@color/txt_clr"
+                    android:layout_toRightOf="@+id/add_circle"
+                    android:padding="5dp"
+                    android:textSize="15dp"/>
+
+
+
+            </LinearLayout>
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/enter_header_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:layout_marginTop="15dp"
+                android:hint="Header Name *"
+                android:background="@drawable/edittext_bg"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+            <LinearLayout
+                android:id="@+id/signature_lay"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bg"
+                android:gravity="start"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/button_bg_circle"
+                    android:layout_gravity="center"
+                    android:padding="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    android:src="@drawable/add"/>
+
+
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signa"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:textColor="@color/txt_clr"
+                    android:layout_toRightOf="@+id/add_circle"
+                    android:padding="5dp"
+                    android:textSize="15dp"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp">
+
+
+                <ImageView
+                    android:id="@+id/signature_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="start"/>
+
+                <com.rxmediaapp.customfonts.CustomButton
+                    android:id="@+id/signature_browse_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="14dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="false"
+                    android:text="@string/browse"
+                    android:textColor="@color/white"
+                    android:background="@drawable/simple_button_bg"
+                    android:layout_marginLeft="8dp" />
+
+
+            </LinearLayout>
+
+            <com.rxmediaapp.customfonts.CustomButton
+                android:id="@+id/pf_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="25dp"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:background="@drawable/button_bg_clr"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

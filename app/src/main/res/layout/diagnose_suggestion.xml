@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:elevation="0dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--@drawable/popup_bg-->
+                    <LinearLayout
+                        android:id="@+id/header_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:background="@color/colorAccent"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:id="@+id/info_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Diagnose Suggestion"
+                            android:textSize="16dp"
+                            android:paddingLeft="13dp"
+                            android:gravity="start"
+                            android:visibility="visible"
+                            android:layout_weight="0.15"/>
+
+                        <LinearLayout
+                            android:id="@+id/cancel_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:layout_gravity="center"
+                            android:gravity="right|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/canclimg"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="8dp"
+                                android:tint="@color/white"
+                                android:src="@drawable/close_button"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/addtest_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="start"
+                        android:layout_gravity="center">
+
+
+
+
+                        <ImageView
+                            android:id="@+id/add_circle"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/button_bg_circle"
+                            android:layout_gravity="center"
+                            android:padding="6dp"
+                            android:layout_marginLeft="10dp"
+                            android:clickable="false"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true"
+                            android:tint="@color/white"
+                            android:src="@drawable/add"/>
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:id="@+id/custm_title_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add Test"
+                                android:layout_gravity="center"
+                                android:visibility="visible"
+                                android:textColor="@color/txt_clr"
+                                android:layout_toRightOf="@+id/add_circle"
+                                android:padding="5dp"
+                                android:textSize="14dp"/>
+
+
+
+                    </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/diagnose_suggest_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:scrollbars="none"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <com.rxmediaapp.customfonts.CustomButton
+                            android:id="@+id/search_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/button_bg"
+                            android:gravity="center"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

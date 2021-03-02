@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@color/theme_color"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/custm_menu_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/white"
+                android:src="@drawable/menu"/>
+
+            <ImageView
+                android:id="@+id/custm_backbtn_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:tint="@color/lght_blck_clr"
+                android:src="@drawable/back_button"/>
+
+
+            <com.rxmediaapp.customfonts.CustomRegularTextView
+                android:id="@+id/custm_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:textSize="17dp"/>
+
+            <ImageView
+                android:id="@+id/custm_search_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="invisible"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/white"
+                android:src="@drawable/filter_icon"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

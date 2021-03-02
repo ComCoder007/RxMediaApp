@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <com.rxmediaapp.customfonts.CustomNormalButton
+                android:id="@+id/d_today_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/doc_bg_clr"
+                android:gravity="center"
+                android:text="@string/today"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <com.rxmediaapp.customfonts.CustomNormalButton
+                android:id="@+id/d_hstry_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/patient_bg_clr"
+                android:gravity="center"
+                android:text="@string/hstry"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <com.rxmediaapp.customfonts.CustomEditText
+            android:id="@+id/doc_patient_searchText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableRight="@drawable/search"
+            android:hint="Name, Mobile"
+            android:singleLine="true"
+            android:textColor="@color/txt_clr"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:id="@+id/doc_patient_days_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/d_patent_from_date_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_bg"
+                android:drawableEnd="@drawable/calendericon"
+                android:drawableRight="@drawable/calendericon"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/mandatory_from_date"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="13dp" />
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/d_patent_to_date_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_bg"
+                android:drawableEnd="@drawable/calendericon"
+                android:drawableRight="@drawable/calendericon"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/mandatory_to_date"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.rxmediaapp.customfonts.CustomNormalButton
+                android:id="@+id/h_patient_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/doc_bg_clr"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:visibility="visible" />
+
+            <com.rxmediaapp.customfonts.CustomNormalButton
+                android:id="@+id/h_patient_cancel_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/blue_button_bg"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:text="@string/reset"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/quepat_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/doc_bg_clr"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/que_patnet"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:rotation="180"
+                    android:src="@drawable/syncicon"
+                    android:tint="@color/white" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/d_que_recyler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:scrollbars="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p_todaylist_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rxmediaapp.customfonts.CustomRegularTextView
+                android:id="@+id/history_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/doc_bg_clr"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/checkup_cmplted"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/d_todaycheck_recyler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:scrollbars="none" />
+
+
+
+
+        </LinearLayout>
+
+        <com.rxmediaapp.customfonts.CustomMediumTextView
+            android:id="@+id/nodatavailable_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/add_circle"
+            android:padding="15dp"
+            android:text="@string/nodataavailable"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</LinearLayout>

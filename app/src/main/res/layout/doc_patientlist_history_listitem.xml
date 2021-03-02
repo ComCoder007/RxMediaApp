@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:elevation="0dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:id="@+id/d_prf_dctrnme_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.rxmediaapp.customfonts.CustomMediumTextView
+                android:id="@+id/pat_weight_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weight"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/d_prf_up_img"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:tint="@color/lght_blck_clr"
+                    android:visibility="visible"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/editimage"/>
+
+                <ImageView
+                    android:id="@+id/d_prf_down_img"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:tint="@color/lght_blck_clr"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/deleteicon"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

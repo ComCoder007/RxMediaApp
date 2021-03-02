@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:elevation="0dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:id="@+id/blockdoc_list_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <com.rxmediaapp.circularimageview.CircularImageView
+                    android:id="@+id/blocked_doc_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <com.rxmediaapp.customfonts.CustomBoldTextView
+                        android:id="@+id/blockeddoc_name_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textColor="@color/black"
+                        android:text="@string/docter_name"
+                        android:textSize="14dp"
+                        android:textStyle="bold"/>
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:id="@+id/phonenum_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textColor="@color/form_text_color"
+                        android:text="@string/genphy"
+                        android:textSize="12dp"/>
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:id="@+id/blockeddoc_desig_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textColor="@color/form_text_color"
+                        android:text="@string/genphy"
+                        android:textSize="12dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:id="@+id/blockeddoc_address_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|left"
+                            android:text=""
+                            android:layout_weight="0.3"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:gravity="right"
+                            >
+                            <com.rxmediaapp.customfonts.CustomNormalButton
+                                android:id="@+id/unblock_doc_btn"
+                                android:layout_width="65dp"
+                                android:layout_height="26dp"
+                                android:textSize="10dp"
+                                android:gravity="center"
+                                android:layout_gravity="end"
+                                android:textAllCaps="false"
+                                android:text="Un Block"
+                                android:textColor="@color/white"
+                                android:background="@drawable/simple_button_bg"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:id="@+id/blocked_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:text="@string/blocked"
+                        android:textSize="12dp"/>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

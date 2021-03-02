@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/seldoc_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:hint="@string/seldoc"
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:drawableRight="@drawable/dropdown"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/enrole_search_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/enrole"
+                android:drawableRight="@drawable/search"
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/test_date_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:layout_marginTop="15dp"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:hint="@string/hintdate"
+                android:drawableLeft="@drawable/calendericon"
+                android:drawablePadding="15dp"
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+
+            <com.rxmediaapp.customfonts.CustomButton
+                android:id="@+id/h_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:background="@drawable/button_bg_clr"/>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

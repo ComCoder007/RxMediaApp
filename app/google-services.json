@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "924841117451",
+    "firebase_url": "https://rx-app-4e345.firebaseio.com",
+    "project_id": "rx-app-4e345",
+    "storage_bucket": "rx-app-4e345.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924841117451:android:46f48d33ee2ca1567ec40e",
+        "android_client_info": {
+          "package_name": "com.rxmediaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924841117451-ufstca2vh9ne9ghd58g91p0puaa2bdkh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBflYkcMsXDkzeSHZMyZfmCX15W29czL-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924841117451-ufstca2vh9ne9ghd58g91p0puaa2bdkh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <com.rxmediaapp.customfonts.CustomEditText
+            android:id="@+id/tl_search_me_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="14dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/searchmarket"
+            android:drawableRight="@drawable/search"
+            android:background="@drawable/edittext_bg"
+            android:singleLine="true"
+            android:textColor="@color/txt_clr"
+            android:textColorHint="@color/hintcolor"/>
+
+        <LinearLayout
+            android:id="@+id/tl_add_franchisee_lay"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_bg"
+            android:gravity="start"
+            android:clickable="true"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/button_bg_circle"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:clickable="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/white"
+                android:src="@drawable/add"/>
+
+
+
+            <com.rxmediaapp.customfonts.CustomRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addfranch"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/txt_clr"
+                android:clickable="false"
+                android:layout_toRightOf="@+id/add_circle"
+                android:padding="5dp"
+                android:textSize="14dp"/>
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tl_franchises_recyler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="15dp"
+            android:scrollbars="none"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

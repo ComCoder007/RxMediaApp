@@ -1,0 +1,500 @@
+<resources>
+    <string name="app_name">RX</string>
+
+    <string name="sgn_in">Sign In</string>
+    <string name="email">E-mail</string>
+    <string name="e_mail">E-mail :</string>
+    <string name="pswd">Password</string>
+    <string name="rember">Remember</string>
+    <string name="frgt_pswd">Forgot Password ?</string>
+    <string name="dnthaveacunt">Don\'t Have Account ?</string>
+    <string name="creat_acunt">Create Account</string>
+    <string name="slect_option">Select Option</string>
+    <string name="patient">Patient</string>
+    <string name="hospiatal">Hospital</string>
+    <string name="individual_doctor">Individual Doctor</string>
+
+    <string name="sgnup">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="nameadrs">Name, Address, Comments</string>
+
+    <string name="mbile_num">Mobile Number</string>
+    <string name="aadhar_num">Aadhaar No</string>
+    <string name="dob">Date of Birth *</string>
+    <string name="gender">Gender</string>
+
+    <string name="bloodgroup">Blood Group</string>
+    <string name="cnfrm_pswd">Confirm Password</string>
+    <string name="cnfrmpswd">Confirm Password *</string>
+
+    <string name="adddoc">Add Doctor</string>
+
+
+    <string name="forgot_pswd">Forgot Password</string>
+    <string name="send_pswd">We just need your register mobile to send password</string>
+    <string name="mobile">Mobile </string>
+    <string name="reset_pswd">Reset Password</string>
+
+    <string name="dueto">Consulted Doctor Due to *</string>
+    <string name="addphy">Add Physical Examination</string>
+    <string name="entervalue">Enter Value</string>
+    <string name="test">Test</string>
+    <string name="logo">Logo</string>
+    <string name="signa">Signature</string>
+    <string name="header">Header Name</string>
+    <string name="entrheader">Enter Header Name</string>
+    <string name="reflabname">Refer to Lab Name</string>
+    <string name="testname">Test Name</string>
+    <string name="addapp">Add Appointment</string>
+    <string name="addphyex">Physical Examination</string>
+    <string name="addex">Add Examination</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="browse">Browse</string>
+    <string name="submit">Submit</string>
+    <string name="entrvalu">Enter Value</string>
+
+    <string name="myprfle">HOME</string>
+    <string name="settings">DOCTOR</string>
+    <string name="notfications">ASSISTANT</string>
+    <string name="donations">PATIENT LIST</string>
+    <string name="help">TOTAL PRESCRIPTION</string>
+    <string name="change_password">TOTAL TEST SUGESSTED</string>
+    <string name="prfle">PROFILE</string>
+    <string name="logout">LOG OUT</string>
+
+
+    //anil
+    <string name="patient_not_fund">Patient Not Found\nPlease Add Patient</string>
+    <string name="pls_add_patent">Please Add Patient</string>
+    <string name="dr_name">Please enter Name</string>
+    <string name="doc_name">Doctor Name</string>
+    <string name="rgstn_num">Doctor Register Number</string>
+    <string name="docter_name"> Dr.Rajashekar</string>
+    <string name="headache">  Headache</string>
+    <string name="doctor">Doctor :</string>
+    <string name="imageuplod"> Image uploaded on 02-01-2020</string>
+    <string name="datetme"> 02-01-2020 / 13:00</string>
+    <string name="appdatetime">Appointment Date &amp; Time :</string>
+    <string name="appdate_">Appointment Date :</string>
+    <string name="ref">Referred by :</string>
+    <string name="prescripby">Prescription by :</string>
+    <string name="prescrip">Prescription :</string>
+    <string name="problem">Problem :</string>
+    <string name="date">Date :</string>
+    <string name="entrdate">Enter Date :</string>
+    <string name="otherdoc">Other Doctor</string>
+
+
+    <string name="adres">Address</string>
+    <string name="apntmnt_slt">Appointment Slot</string>
+    <string name="frm_days">From Days</string>
+    <string name="to_days">To Days</string>
+    <string name="custom">Custom</string>
+    <string name="asgn_dctrs">Assign Doctors</string>
+
+    <string name="sel_clinics">Select Clinic</string>
+    <string name="hsptl_nme">Hospital Name</string>
+    <string name="hsptl_rgstn_no">Hospital Register Number</string>
+    <string name="num_beds">No of Beds</string>
+    <string name="testdate"> 02 - May - 2020</string>
+    <string name="hintdate">dd/mm/yyyy</string>
+    <string name="diagnoname">Diagnostic Name :</string>
+    <string name="vijayadia">Vijaya Diagnostic</string>
+    <string name="refdocname">Ref Doctor Name :</string>
+    <string name="remark">Remark :</string>
+    <string name="remarkhint">Remark</string>
+    <string name="remarks">Remarks</string>
+    <string name="address">Address :</string>
+    <string name="dilsuk"> Dilsukhnagar</string>
+    <string name="blockdoc">Block Doctor List</string>
+    <string name="searchdoc">Search Doctors</string>
+    <string name="maybe">May be Appendicitiis</string>
+    <string name="genphy">General Physician</string>
+
+    <string name="dateentr">19-10-2019</string>
+    <string name="blocked">Blocked</string>
+    <string name="abdomain"> -</string>
+    <string name="appointdate">Appointment Date</string>
+    <string name="attach">Scanned Copy</string>
+    <string name="suresh">Suresh</string>
+    <string name="instnone">If patient not found with search go through</string>
+    <string name="insttwo">Add Appointment_1 Screen</string>
+    <string name="instthree">If patient found and having one user go Through Add Appointment_2 Screen</string>
+    <string name="instfour">If patient found and having multiple user go Through Add Appointment_3 Screen</string>
+    <string name="appendicit">-</string>
+
+
+    <string name="relation">Relation</string>
+    <string name="brother">Brother</string>
+    <string name="age">Age</string>
+    <string name="years">25 Years</string>
+    <string name="mobilenum">9966779966</string>
+    <string name="sex">Sex</string>
+    <string name="male">Male</string>
+
+    <string name="oplus">O+</string>
+    <string name="enterpres">Your Enter Prescriptions</string>
+    <string name="hospres">Your Hospitals Prescriptions</string>
+    <string name="docpres">Doctor Prescriptions</string>
+    <string name="othdocpres">Other Doctor Prescriptions</string>
+
+    //anil new
+    <string name="infrmatn">Information</string>
+    <string name="wrkng_adres">Working Address</string>
+
+    <string name="yourpres">Your Prescriptions</string>
+
+    <string name="srch_patent">Search Patient</string>
+
+    <string name="today">TODAY</string>
+    <string name="hstry">HISTORY</string>
+
+    <string name="que_patnet">In Que patient</string>
+    <string name="checkup_cmplted">Today Checkup Completed</string>
+
+
+    <string-array name="drawable_names" >
+        <item>Add Patient</item>
+        <item>Add Appointment</item>
+        <item>Assessment &amp; Plan</item>
+        <item>Diagnose Suggestion</item>
+        <item>Medication</item>
+        <item>Add Physical Examination</item>
+        <item>Patient Details</item>
+        <item>Patient List</item>
+        <item>Physical Suggestion</item>
+        <item>Profile</item>
+        <item>Add Assessment</item>
+        <item>Doctor Details</item>
+        <item>Prescription Details 1</item>
+        <item>Prescription Details 2</item>
+        <item>Prescription Details 2</item>
+        <item>Patient Details</item>
+        <item>Patient List</item>
+        <item>H Profile</item>
+        <item>Test Suggested</item>
+        <item>Report Details</item>
+        <item>Block Doctors</item>
+        <item>Add Diagnosis</item>
+        <item>Members</item>
+        <item>Test Suggestions</item>
+        <item>@string/logout</item>
+
+    </string-array>
+
+
+
+   <!-- <string-array name="drawable_names" >
+        <item>@string/myprfle</item>
+        <item>@string/settings</item>
+        <item>@string/notfications</item>
+        <item>@string/donations</item>
+        <item>@string/help</item>
+        <item>@string/change_password</item>
+        <item>@string/prfle</item>
+        <item>@string/logout</item>
+
+    </string-array>
+
+    <array name="drawable_icons">
+        <item>@drawable/home</item>
+        <item>@drawable/home</item>
+        <item>@drawable/home</item>
+        <item>@drawable/home</item>
+        <item>@drawable/home</item>
+        <item>@drawable/home</item>
+        <item>@drawable/home</item>
+        <item>@drawable/home</item>
+
+    </array>-->
+
+
+    <string-array name="hospital_list" >
+        <item>HOME</item>
+        <item>DOCTORS</item>
+        <item>ASSISTANTS</item>
+        <item>APPOINTMENT LIST</item>
+        <item>PATIENT LIST</item>
+        <item>TOTAL PRESCRIPTION</item>
+        <item>TOTAL TESTS SUGGESTED</item>
+        <item>PROFILE</item>
+        <item>CHANGE PASSWORD</item>
+        <item>@string/logout</item>
+
+    </string-array>
+
+    <string-array name="patient_list" >
+        <item>HOME</item>
+        <item>SUB MEMBERS</item>
+        <item>PRESCRIPTION LIST</item>
+        <item>DIAGNOSIS</item>
+        <item>TESTS SUGGESTIONS</item>
+        <item>BLOCK LIST</item>
+        <item>@string/prfle</item>
+        <item>CHANGE PASSWORD</item>
+        <item>@string/logout</item>
+
+    </string-array>
+
+    <string-array name="doctor_list" >
+        <item>HOME</item>
+        <item>ASSISTANTS</item>
+        <item>APPOINTMENT LIST</item>
+        <item>ADD APPOINTMENT</item>
+        <item>PATIENT LIST</item>
+        <item>PRESCRIPTIONS</item>
+        <item>TESTS SUGGESTED</item>
+        <item>PHYSICAL SUGGESTIONS</item>
+        <item>PRINT FORMAT</item>
+       <!-- <item>OTHER DOCTOR PRESCRIPTIONS</item>-->
+        <item>PROFILE</item>
+        <item>CHANGE PASSWORD</item>
+        <item>@string/logout</item>
+
+    </string-array>
+
+
+    <string-array name="mainfranchise_list" >
+        <item>HOME</item>
+        <item>SUB FRANCHISEES</item>
+        <item>HOSPITALS</item>
+        <item>DOCTORS</item>
+        <item>PATIENTS</item>
+        <item>HOSPITAL/DOCTORS LEAD’S</item>
+        <item>PROFILE</item>
+        <item>CHANGE PASSWORD</item>
+        <item>@string/logout</item>
+
+    </string-array>
+
+    <string-array name="subfranchise_list" >
+        <item>HOME</item>
+        <item>HOSPITALS</item>
+        <item>DOCTORS</item>
+        <item>PATIENTS</item>
+        <item>HOSPITAL/DOCTORS LEAD’S</item>
+        <item>PROFILE</item>
+        <item>CHANGE PASSWORD</item>
+        <item>@string/logout</item>
+
+    </string-array>
+
+    <string-array name="assistant_list" >
+        <item>HOME</item>
+        <item>ADD APPOINTMENT</item>
+        <item>APPOINTMENT LIST</item>
+        <item>PATIENT LIST</item>
+        <item>PROFILE</item>
+        <item>CHANGE PASSWORD</item>
+        <item>@string/logout</item>
+
+    </string-array>
+    <string-array name="teamleader_list" >
+        <item>HOME</item>
+        <item>MARKETING EXECUTIVES</item>
+        <item>FRANCHISEES</item>
+        <item>HOSPITALS</item>
+        <item>DOCTORS</item>
+        <item>PATIENTS</item>
+        <item>HOSPITAL/DOCTORS LEAD’S</item>
+        <item>PROFILE</item>
+        <item>CHANGE PASSWORD</item>
+        <item>@string/logout</item>
+
+    </string-array>
+
+    <string-array name="marketexc_list" >
+        <item>HOME</item>
+        <item>FRANCHISEES</item>
+        <item>HOSPITAL</item>
+        <item>DOCTORS</item>
+        <item>PATIENT</item>
+        <item>HOSPITAL/DOCTORS LEAD’S</item>
+        <item>PROFILE</item>
+        <item>CHANGE PASSWORD</item>
+        <item>@string/logout</item>
+
+    </string-array>
+
+
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="avaible_tmengs">Available timings</string>
+    <string name="avaible_tme">Available time</string>
+
+    <string name="from_tme">From Time</string>
+    <string name="to_tme">To Time</string>
+
+    <string name="diagnname">Diagnostic Name </string>
+    <string name="diagnname_">Diagnostic Name *</string>
+
+    <string name="enrole">Enrollee ID / Mobile Nmber</string>
+    <string name="seldoc">Select Doctor</string>
+    <string name="searchassis">Search Assistant</string>
+    <string name="addassis">Add Assistant</string>
+    <string name="rita">Rita</string>
+    <string name="asstime">01:00 AM - 02:00 PM</string>
+    <string name="search">Search</string>
+    <string name="noassign">No of Doctors Assigned :</string>
+    <string name="idno"> SRT 8646</string>
+    <string name="enroleid">Enrollee ID : </string>
+    <string name="addphysu">Add Physical Suggestion</string>
+    <string name="dtest">Test : </string>
+    <string name="cbpt"> CBP / Ultra sound / T3</string>
+    <string name="refto">Referred to : </string>
+
+    <string name="nointernet">No internet connection available</string>
+
+
+    <string name="adddia">Add Diagnosis</string>
+    <string name="diasug">Diagnosis Suggestion</string>
+    <string name="remarkss">Remark</string>
+    <string name="medication">Medication</string>
+    <string name="sudha"> Sudha Rani</string>
+    <string name="addmem">Add Member</string>
+    <string name="relmoth">Relation Mother</string>
+    <string name="regon">Registered on :</string>
+    <string name="searchhos">Search Hospital / Doctor</string>
+
+    <string name="change_pswd">Change Password</string>
+    <string name="new_pswd">New Password</string>
+
+
+    <string name="addmarket">Add Marketing Executive</string>
+    <string name="searchmarket">Search Marketing Executive</string>
+    <string name="exname">Executive Name</string>
+    <string name="franname">Franchise Name</string>
+    <string name="francname">Franchise Name :</string>
+    <string name="contact">Mobile :</string>
+    <string name="reffrm">Reference From</string>
+    <string name="searchfranc">Search Franchises</string>
+
+    <string name="reset">Reset</string>
+
+    <string name="takepic">Take Picture</string>
+    <string name="cancel">Cancel</string>
+    <string name="chsefromglry">Choose from gallery</string>
+
+    <string name="sunshine">Sunshine Hospital</string>
+    <string name="searchhospital">Search Hospitals</string>
+    <string name="searchpati">Search Patient</string>
+    <string name="searchsubfra">Search Sub Franchise</string>
+    <string name="addfranch">Add Franchise</string>
+    <string name="addhosp">Add Hospital</string>
+
+    <string name="addpatient">Add Patient</string>
+    <string name="save">Save</string>
+    <string name="addhsplead">Add Hospital Lead</string>
+    <string name="appoint">Appointment :</string>
+    <string name="allpages">All Pages are same based on their selection</string>
+
+    //validations
+    <string name="enter_dr_name">Please enter Name</string>
+    <string name="enter_valid_email">Please enter valid Email</string>
+    <string name="reg_validation">Enter Registration Number</string>
+    <string name="enter_valid_mobile">Enter valid Mobile Number</string>
+    <string name="confirm_pass_validation">Passwords not matching</string>
+    <string name="enter_pass_validation">Please enter your password</string>
+    <string name="enter_confirm_pass_validation">Please enter confirm your password</string>
+    <string name="address_validation">Please enter address</string>
+    <string name="year_reg_validation">Please enter year of registration</string>
+    <string name="state_board_validation">Please enter State Board</string>
+    <string name="specizlization_validation">Please select Specialization</string>
+    <string name="from_day_validate">Please select From Day</string>
+    <string name="to_day_validate">Please select To Day</string>
+    <string name="from_time_validate">Please select From Time</string>
+    <string name="to_time_validate">Please select To Time</string>
+    <string name="no_beds_validate">Please enter the Number of Beds</string>
+    <string name="aadhar_validation">Please enter Aadhaar Number</string>
+    <string name="dob_validation">Please select Date of Birth</string>
+    <string name="gender_validate">Please select Gender</string>
+    <string name="blood_validation">Please select Blood Group</string>
+    <string name="enter_newpass_validation">Please enter your New Password</string>
+    <string name="assign_doc_validate">Please select Assign Doctors</string>
+    <string name="enter_mobile_validation">Please enter your Mobile Number</string>
+    <string name="enter_relation">Please enter Relation</string>
+    <string name="enter_comments">Please enter Comments</string>
+    <string name="appointment_validation">Please select Appointment date</string>
+
+
+    <string name="nodataavailable">No data available</string>
+
+    <string name="mandatory_frmdays">From Days</string>
+    <string name="mandatory_todays">To Days</string>
+    <!--mandatory-->
+    <string name="mandatory_dr_name">Dr Name *</string>
+    <string name="mandatory_speclzatn">Specialization *</string>
+    <string name="mandatory_speclzatn_">Specialization</string>
+    <string name="mandatory_state_bard">State Board *</string>
+    <string name="mandatory_year_rgstn">Year of registration *</string>
+    <string name="mandatory_mbile_num">Mobile Number *</string>
+    <string name="mandatory_from_tme">From Time *</string>
+    <string name="mandatory_to_tme">To Time *</string>
+
+    <string name="mandatory_frm_days">From Days *</string>
+    <string name="mandatory_to_days">To Days *</string>
+    <string name="mandatory_mobile">Mobile Number *</string>
+    <string name="f_mandatory_mobile">Mobile Number / Email *</string>
+    <string name="mandatory_hsptl_nme">Hospital Name *</string>
+    <string name="mandatory_hsptl_rgstn_no">Hospital Register Number *</string>
+    <string name="mandatory_num_beds">No of Beds *</string>
+    <string name="mandatory_name">Name *</string>
+    <string name="mandatory_gender">Gender *</string>
+    <string name="mandatory_blodd_group">Blood Group *</string>
+
+    <string name="mandatory_rgstn_num">Doctor Register Number  *</string>
+    <string name="mandatory_new_pswd">New Password *</string>
+    <string name="mandatory_appointdate">Appointment Date *</string>
+    <string name="mandatory_adres">Address</string>
+    <string name="mandatory_adrs">Address *</string>
+    <string name="mandatory_patient">Patient *</string>
+    <string name="mandatory_aadhar_num">Aadhaar No </string>
+    <string name="mandatory_dob">Date of Birth *</string>
+
+    <string name="mandatory_pswd">Password * </string>
+    <string name="mandatorypswd">Confirm Password * </string>
+    <string name="enter_dueto">Please enter Consulted Doctor Due to</string>
+    <string name="mandatory_relation">Relation *</string>
+
+    <string name="searchprescrip">Search Prescriptions</string>
+
+    <string name="mandatory_from_date">From Date</string>
+    <string name="mandatory_to_date">To Date</string>
+    <string name="pswd_">Password *</string>
+
+    <string name="ref_from_date">Referred From Date</string>
+    <string name="ref_to_date">Referred To Date</string>
+
+
+    //New Strings and Validations
+
+    <string name="repor_from_date">Report From Date</string>
+    <string name="repor_to_date">Report To Date</string>
+    <string name="report_date">Report Date *</string>
+    <string name="mandatory_refdocname">Ref Doctor Name *</string>
+    <string name="mandatory_testname">Test Name *</string>
+    <string name="mandatory_remarks">Remarks *</string>
+
+    <string name="reportdate_validation">Please select Report date</string>
+    <string name="dianame_validation">Please enter Diagnostic Name</string>
+    <string name="testname_validation">Please enter Test Name</string>
+    <string name="remarks_validation">Please enter Remarks</string>
+
+    <string name="selectdoctor_validation">Please Select Doctor</string>
+    <string name="selectfrm_date">Please select From date</string>
+    <string name="to_date">To date must be after From date</string>
+
+    <string name="patientname">Patient Name</string>
+    <string name="hospname">Hospital Name</string>
+    <string name="docname">Doctor Name</string>
+    <string name="mobilenumber">Mobile Number</string>
+    <string name="status">Status</string>
+    <string name="comments">Comments</string>
+
+
+
+
+
+</resources>

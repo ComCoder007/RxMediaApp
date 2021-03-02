@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/addapointment_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:scrollbars="none"
+                android:visibility="visible">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <com.rxmediaapp.customfonts.CustomMediumTextView
+                android:id="@+id/nodatavailable_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nodataavailable"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/add_circle"
+                android:padding="15dp"
+                android:textSize="18dp"/>
+
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <com.rxmediaapp.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/instnone"
+                android:textColor="@color/hintcolor"
+                android:textSize="14dp" />
+
+
+            <com.rxmediaapp.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/insttwo"
+                android:textColor="@color/hintcolor"
+                android:textSize="14dp" />
+
+            <com.rxmediaapp.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/instthree"
+                android:textColor="@color/hintcolor"
+                android:textSize="14dp" />
+
+            <com.rxmediaapp.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="@string/instfour"
+                android:textColor="@color/hintcolor"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

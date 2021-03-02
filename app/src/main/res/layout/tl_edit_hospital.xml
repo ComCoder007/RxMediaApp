@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/mandatory_hsptl_nme"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/tl_hsptlnme_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/mandatory_hsptl_nme"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/tl_email_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/email"
+                    
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/mandatory_hsptl_rgstn_no"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/tl_hsptlrgstno_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/mandatory_hsptl_rgstn_no"
+                    
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/mandatory_num_beds"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/tl_beds_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/mandatory_num_beds"
+                    android:inputType="number"
+                    
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/mandatory_mbile_num"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/tl_mbile_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                     android:maxLength="10"
+                android:hint="@string/mandatory_mbile_num"
+                    android:inputType="number"
+                    
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/mandatory_adres"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/tl_adres_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="top|left"
+                    android:hint="@string/mandatory_adres"
+                    android:lines="4"
+                    android:imeOptions="actionDone"
+                    android:padding="13dp"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/pswd_"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/hsp_passwd_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+
+                    android:visibility="gone"
+                    android:hint="@string/pswd_"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/avaible_tmengs"
+                    android:textColor="@color/txt_clr"
+                    android:textSize="16dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.rxmediaapp.customfonts.CustomEditText
+                        android:id="@+id/tl_avabletme_edtx"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/edittext_bg"
+                        android:drawableRight="@drawable/dropdown"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/mandatory_from_tme"
+                        
+                        android:singleLine="true"
+                        android:textColor="@color/txt_clr"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="14dp" />
+
+                    <com.rxmediaapp.customfonts.CustomEditText
+                        android:id="@+id/tl_tmetwo_edtx"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/edittext_bg"
+                        android:drawableRight="@drawable/dropdown"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/mandatory_to_tme"
+                        
+                        android:singleLine="true"
+                        android:textColor="@color/txt_clr"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+
+                <com.rxmediaapp.customfonts.CustomButton
+                    android:id="@+id/tl_save_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg_clr"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

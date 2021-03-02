@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="5dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/p_add_presc_patient_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:hint="Select Patient"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:drawableRight="@drawable/dropdown"
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/prescrip_date_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:layout_marginTop="15dp"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:hint="Appointment Date *"
+                android:drawableRight="@drawable/calendericon"
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/p_ap_search_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:layout_marginTop="15dp"
+                android:hint="Doctor Name *"
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/p_presc_prob_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:gravity="top|left"
+                android:hint="Problem *"
+                android:lines="3"
+                android:imeOptions="actionDone"
+                android:padding="10dp"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/remark_lay"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/theme_background"
+                android:gravity="center_vertical">
+
+
+                    <ImageView
+                        android:id="@+id/remark_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="12dp"
+                        android:clickable="false"
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/globe"/>
+
+
+
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:id="@+id/remark_title_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remarkss"
+                        android:clickable="false"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:textColor="@color/txt_clr"
+                        android:textSize="14dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:clickable="false"
+
+                        android:gravity="right">
+                    <ImageView
+                        android:id="@+id/remark_next_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:clickable="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:tint="@color/colorPrimaryDark"
+                        android:rotation="180"
+                        android:src="@drawable/back_button"/>
+
+                    </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/theme_background">
+
+                <com.rxmediaapp.customfonts.CustomMediumTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/attach"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/attach_img"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/heatbeat"/>
+
+                    <com.rxmediaapp.customfonts.CustomButton
+                        android:id="@+id/browse_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textSize="14dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:textAllCaps="false"
+                        android:text="@string/browse"
+                        android:textColor="@color/white"
+                        android:background="@drawable/simple_button_bg"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/diasuggest_lay"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/theme_background"
+                android:gravity="center_vertical">
+
+
+                <ImageView
+                    android:id="@+id/diasuggest_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:clickable="false"
+                    android:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/globe"/>
+
+
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/diasuggest_title_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diasug"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:textColor="@color/txt_clr"
+                    android:textSize="14dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:clickable="false"
+                    android:gravity="right">
+                    <ImageView
+                        android:id="@+id/diasuggest_search_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:clickable="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:tint="@color/colorPrimaryDark"
+                        android:rotation="180"
+                        android:src="@drawable/back_button"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/medication_lay"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/theme_background"
+                android:gravity="center_vertical">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:clickable="false"
+                    android:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/globe"/>
+
+
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medication"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:textColor="@color/txt_clr"
+                    android:textSize="14dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:clickable="false"
+                    android:gravity="right">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:clickable="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:tint="@color/colorPrimaryDark"
+                        android:rotation="180"
+                        android:src="@drawable/back_button"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.rxmediaapp.customfonts.CustomButton
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/simple_button_bg"
+                android:gravity="center"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+</LinearLayout>

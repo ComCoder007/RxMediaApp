@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--@drawable/popup_bg-->
+                    <LinearLayout
+                        android:id="@+id/header_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorAccent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:id="@+id/info_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.15"
+                            android:gravity="start"
+                            android:paddingLeft="13dp"
+                            android:text="Block Doctor"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:id="@+id/cancel_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.85"
+                            android:gravity="right|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/canclimg"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="8dp"
+                                android:src="@drawable/close_button"
+                                android:tint="@color/white" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="vertical">
+
+
+                        <com.rxmediaapp.customfonts.CustomEditText
+                            android:id="@+id/select_doctor_edtx"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="14dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:hint="Select Doctor"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:drawableRight="@drawable/dropdown"
+                            android:background="@drawable/edittext_bg"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_clr"
+                            android:textColorHint="@color/hintcolor"/>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <com.rxmediaapp.customfonts.CustomButton
+                                android:id="@+id/Block_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="42dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/button_bg"
+                                android:gravity="center"
+                                android:text="Block"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

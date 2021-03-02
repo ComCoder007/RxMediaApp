@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="true"
+        android:elevation="2dp"
+        android:layout_margin="1dp"
+        app:cardCornerRadius="3dp">
+
+        <LinearLayout
+            android:id="@+id/testsuggested_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:orientation="vertical">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/p_tst_date_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date : 10-03-2020"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="12dp" />
+
+                <com.rxmediaapp.customfonts.CustomBoldTextView
+                    android:id="@+id/p_tst_diastc_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diagnostic Name : Vijaya Diagnostic"
+                    android:textColor="@color/txt_clr"
+                    android:textSize="13dp" />
+
+                <com.rxmediaapp.customfonts.CustomBoldTextView
+                    android:id="@+id/p_tst_rfdctr_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ref Doctor Name : Sudha Rani"
+                    android:textColor="@color/txt_clr"
+                    android:textSize="13dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/p_tst_ultrasund_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1) Ultra Sound"
+                    android:textColor="@color/lght_blck_clr"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/p_tst_tft_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="2) TFT"
+                    android:textColor="@color/lght_blck_clr"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/p_tst_cbp_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="3) CBP"
+                    android:textColor="@color/lght_blck_clr"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/dropdown_icon"
+                    android:rotation="270"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="right|top"
+                    android:tint="@color/lght_blck_clr"/>
+
+                <ImageView
+                    android:id="@+id/p_tst_delete_img"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="5dp"
+
+                    android:layout_gravity="right|bottom"
+                    android:tint="@color/lght_blck_clr"
+                    android:src="@drawable/editimage"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

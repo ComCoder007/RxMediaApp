@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_color">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="25dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="false"
+        android:elevation="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<!--@drawable/popup_bg-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/ddocname_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/ddocspc_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="15dp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolor"
+                    android:layout_marginTop="10dp"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.36"
+                        android:orientation="vertical">
+
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Patients"
+                        android:textColor="@color/lght_blck_clr"
+                        android:textSize="14dp" />
+
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="24"
+                            android:textColor="@color/hintcolor"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="70dp"
+                        android:background="@color/lght_blck_clr" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Prescriptions"
+                            android:textColor="@color/lght_blck_clr"
+                            android:textSize="14dp" />
+
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="20"
+                            android:textColor="@color/hintcolor"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="70dp"
+                        android:background="@color/lght_blck_clr" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Test Suggested"
+                            android:textColor="@color/lght_blck_clr"
+                            android:textSize="14dp" />
+
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="05"
+                            android:textColor="@color/hintcolor"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/lght_blck_clr"/>
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Attender Assigned to"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/doc_attender_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"
+                    android:hint=""
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/graycolor"
+                    android:layout_marginTop="10dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/doc_details_recyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none"/>
+
+                <com.rxmediaapp.customfonts.CustomMediumTextView
+                    android:id="@+id/nodatavailable_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nodataavailable"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/add_circle"
+                    android:padding="15dp"
+                    android:textSize="18dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <com.rxmediaapp.circularimageview.CircularImageView
+            android:id="@+id/ddocname_img"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="10dp"
+            />
+
+    </FrameLayout>
+</LinearLayout>

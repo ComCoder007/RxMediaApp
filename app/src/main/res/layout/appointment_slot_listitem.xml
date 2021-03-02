@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/form_text_color"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12"
+                    android:orientation="horizontal">
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/h_frmday_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginRight="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/mandatory_frm_days"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:drawableEnd="@drawable/dropdown"
+                    android:drawableRight="@drawable/dropdown"/>
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/h_today_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginLeft="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/mandatory_to_days"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"
+                    android:drawableEnd="@drawable/dropdown"
+                    android:drawableRight="@drawable/dropdown"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:layout_weight="0.88">
+                <ImageView
+                    android:id="@+id/del_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+
+                    android:src="@drawable/deleteicon"
+                    android:layout_gravity="center"
+                   />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <com.rxmediaapp.customfonts.CustomBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slot 1 *"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/h_avabletme_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="0.5"
+
+                    android:drawableRight="@drawable/dropdown"
+                    android:layout_marginRight="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/from_tme"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/h_tmetwo_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="0.5"
+
+                    android:drawableRight="@drawable/dropdown"
+                    android:layout_marginLeft="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/to_tme"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+            </LinearLayout>
+
+            <com.rxmediaapp.customfonts.CustomBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slot 2"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/h_avabletme_edtx2"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@drawable/dropdown"
+                    android:layout_marginRight="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/from_tme"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/h_tmetwo_edtx2"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@drawable/dropdown"
+                    android:layout_marginLeft="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/to_tme"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+            </LinearLayout>
+
+            <com.rxmediaapp.customfonts.CustomBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slot 3"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/h_avabletme_edtx3"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@drawable/dropdown"
+                    android:layout_marginRight="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/from_tme"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/h_tmetwo_edtx3"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@drawable/dropdown"
+                    android:layout_marginLeft="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/to_tme"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+            </LinearLayout>
+            <com.rxmediaapp.customfonts.CustomBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slot 4"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/h_avabletme_edtx4"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@drawable/dropdown"
+                    android:layout_marginRight="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/from_tme"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/h_tmetwo_edtx4"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="0.5"
+                    android:drawableRight="@drawable/dropdown"
+                    android:layout_marginLeft="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/to_tme"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+

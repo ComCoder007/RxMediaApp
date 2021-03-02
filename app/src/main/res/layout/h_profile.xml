@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <com.rxmediaapp.circularimageview.CircularImageView
+                    android:id="@+id/hos_profile_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/edit_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/editimage"
+                    android:tint="@color/black" />
+
+            </FrameLayout>
+
+
+            <com.rxmediaapp.customfonts.CustomRegularTextView
+                android:id="@+id/hospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="-"
+                android:gravity="center"
+                android:textColor="@color/dark_blue_clr"
+                android:textSize="15dp" />
+
+            <com.rxmediaapp.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/hintcolor"
+                android:textSize="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/graycolor"/>
+
+            <LinearLayout
+                android:id="@+id/info_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="15dp"
+                        android:tint="@color/dark_blue_clr"
+                        android:src="@drawable/user_prfile"/>
+
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/infrmatn"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/txt_clr"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:rotation="180"
+                        android:layout_marginRight="15dp"
+                        android:tint="@color/dark_blue_clr"
+                        android:src="@drawable/back_button"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/graycolor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Hospital Name *"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/hosp_name_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:hint="Hospital Name *"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/mandatory_mbile_num"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/mobinum_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:hint="@string/mandatory_mbile_num"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/hosp_email_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:hint="@string/email"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/mandatory_hsptl_rgstn_no"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/hosp_regnum_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:hint="@string/mandatory_hsptl_rgstn_no"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/mandatory_num_beds"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/nobeds_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:inputType="number"
+                    android:hint="@string/mandatory_num_beds"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/graycolor"/>
+
+            <LinearLayout
+                android:id="@+id/h_working_address_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="15dp"
+                        android:tint="@color/dark_blue_clr"
+                        android:src="@drawable/map_lctn"/>
+
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wrkng_adres"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/txt_clr"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:rotation="180"
+                        android:layout_marginRight="15dp"
+                        android:tint="@color/dark_blue_clr"
+                        android:src="@drawable/back_button"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/graycolor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/adres"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomEditText
+                    android:id="@+id/address_edtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:padding="13dp"
+                    android:lines="3"
+                    android:imeOptions="actionDone"
+                    android:gravity="top|left"
+                    android:hint="@string/adres"
+                    android:background="@drawable/edittext_bg"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5">
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/mandatory_from_tme"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+                        <com.rxmediaapp.customfonts.CustomEditText
+                            android:id="@+id/h_prfle_avabletme_edtx"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="14dp"
+                            android:layout_weight="0.5"
+                            android:layout_marginRight="5dp"
+                            android:editable="false"
+                            android:drawableRight="@drawable/dropdown"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/mandatory_from_tme"
+                            android:background="@drawable/edittext_bg"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_clr"
+                            android:textColorHint="@color/hintcolor"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5">
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/mandatory_to_tme"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+                        <com.rxmediaapp.customfonts.CustomEditText
+                            android:id="@+id/h_prfle_tmetwo_edtx"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="14dp"
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="5dp"
+                            android:editable="false"
+                            android:drawableRight="@drawable/dropdown"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/mandatory_to_tme"
+                            android:background="@drawable/edittext_bg"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_clr"
+                            android:textColorHint="@color/hintcolor"/>
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <com.rxmediaapp.customfonts.CustomButton
+                    android:id="@+id/h_prfle_sbmt_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14dp"
+                    android:textAllCaps="false"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_bg_clr"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

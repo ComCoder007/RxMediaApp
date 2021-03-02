@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/theme_background"
+        android:orientation="vertical">
+
+        <com.rxmediaapp.customfonts.CustomEditText
+            android:id="@+id/search_brand_edt"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableRight="@drawable/search"
+            android:hint="Brand"
+
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:textColor="@color/txt_clr"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="12dp" />
+
+        <com.rxmediaapp.customfonts.CustomNormalButton
+            android:id="@+id/suggestedbrands_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/doc_bg_clr"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+
+            android:text="Suggested Brands"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:visibility="visible" />
+
+        <com.rxmediaapp.customfonts.CustomRegularTextView
+            android:id="@+id/sel_brands_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="-"
+            android:lines="2"
+            android:textAllCaps="false"
+            android:textColor="@color/txt_clr"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"/>
+
+        <com.rxmediaapp.customfonts.CustomEditText
+            android:id="@+id/molecule_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Molecule"
+            
+            android:singleLine="true"
+            android:textColor="@color/txt_clr"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="12dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/no_days_edt"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_bg"
+                android:hint="No Of Days"
+                android:imeOptions="actionDone"
+
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="12dp" />
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/dose_edt"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:paddingLeft="10dp"
+                android:imeOptions="actionDone"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_bg"
+                android:hint="Dose"
+                
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.33">
+
+                <CheckBox
+                    android:id="@+id/morning_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Morning"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.33">
+                <CheckBox
+                    android:id="@+id/afternoon_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Afternoon"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.33">
+                <CheckBox
+                    android:id="@+id/evening_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evening"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/beforefood_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Before Food"
+                android:textSize="13dp"/>
+
+            <RadioButton
+                android:id="@+id/afterfood_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="After Food"
+                android:textSize="13dp"/>
+        </LinearLayout>
+
+        <com.rxmediaapp.customfonts.CustomEditText
+            android:id="@+id/medication_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Remarks"
+            android:lines="2"
+            android:imeOptions="actionDone"
+            android:gravity="top|left"
+            android:textColor="@color/txt_clr"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="13dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <com.rxmediaapp.customfonts.CustomNormalButton
+                android:id="@+id/p_save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/doc_bg_clr"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+                android:text="Save"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:visibility="visible" />
+            <ImageView
+                android:id="@+id/med_del_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:padding="3dp"
+
+                android:src="@drawable/deleteicon"
+                android:tint="@color/txt_clr" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

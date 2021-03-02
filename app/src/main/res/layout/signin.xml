@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/heatbeat"/>
+
+            <com.rxmediaapp.customfonts.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/sgn_in"
+                android:textColor="@color/dark_blue_clr"
+                android:textSize="24dp" />
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/email_edttx"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:layout_marginTop="20dp"
+                android:hint="Username"
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/sgn_in_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:hint="@string/pswd"
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="-5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/rem_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:scaleY="0.8"
+                    android:scaleX="0.8"
+                    android:textColor="@color/hintcolor"/>
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:id="@+id/rem_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rember"
+                        android:layout_marginLeft="-3dp"
+                        android:textColor="@color/hintcolor"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center_vertical|right"
+                    android:layout_weight="0.5">
+
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:id="@+id/sgn_forgotpswd_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/frgt_pswd"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:clickable="true"
+                        android:textColor="@color/hintcolor"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.rxmediaapp.customfonts.CustomButton
+                android:id="@+id/sgn_sgnin_btn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="30dp"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+                android:text="@string/sgn_in"
+                android:textColor="@color/white"
+                android:background="@drawable/button_bg_clr"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dnthaveacunt"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="14dp" />
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/sgn_cratacnt_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/creat_acunt"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/dark_blue_clr"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

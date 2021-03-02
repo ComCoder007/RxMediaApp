@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:elevation="0dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/theme_background">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:id="@+id/descr_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Physical Examination"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18dp" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/hintcolor"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/physical_examination_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+
+                    <!--
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="10dp">
+
+                                                <com.rxmediaapp.customfonts.CustomRegularTextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="Bp"
+                                                    android:textColor="@color/hintcolor"
+                                                    android:layout_weight="0.5"
+                                                    android:textSize="13dp" />
+
+
+                                                <com.rxmediaapp.customfonts.CustomRegularTextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="Weight Check"
+                                                    android:textColor="@color/hintcolor"
+                                                    android:layout_weight="0.5"
+                                                    android:textSize="13dp" />
+
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp">
+
+                                                <com.rxmediaapp.customfonts.CustomRegularTextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="100/90"
+                                                    android:textColor="@color/black"
+                                                    android:layout_weight="0.5"
+                                                    android:textSize="15dp" />
+
+
+                                                <com.rxmediaapp.customfonts.CustomRegularTextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="70"
+                                                    android:textColor="@color/black"
+                                                    android:layout_weight="0.5"
+                                                    android:textSize="15dp" />
+
+
+
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="15dp">
+
+                                                <com.rxmediaapp.customfonts.CustomRegularTextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="Sugar Test"
+                                                    android:textColor="@color/hintcolor"
+                                                    android:layout_weight="0.5"
+                                                    android:textSize="13dp" />
+
+
+                                                <com.rxmediaapp.customfonts.CustomRegularTextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="On Stretcher test"
+                                                    android:textColor="@color/hintcolor"
+                                                    android:layout_weight="0.5"
+                                                    android:textSize="13dp" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp">
+
+                                                <com.rxmediaapp.customfonts.CustomRegularTextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="100/90"
+                                                    android:singleLine="true"
+                                                    android:gravity="top|left"
+                                                    android:textColor="@color/black"
+                                                    android:layout_weight="0.5"
+                                                    android:textSize="15dp" />
+
+
+                                                <com.rxmediaapp.customfonts.CustomRegularTextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="Found Left Side Abdominal issue"
+                                                    android:textColor="@color/black"
+
+                                                    android:layout_weight="0.5"
+                                                    android:textSize="15dp" />
+
+                                            </LinearLayout>
+
+                    -->
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/hintcolor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <com.rxmediaapp.customfonts.CustomBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Patient Advice"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/patadvise_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="3dp"
+                    android:text="-"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="13dp" />
+                <com.rxmediaapp.customfonts.CustomBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Assessment and plan"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/prescription_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="3dp"
+                    android:text="-"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="13dp" />
+
+                <com.rxmediaapp.customfonts.CustomBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Doctor's Note / Advice"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+
+                <com.rxmediaapp.customfonts.CustomRegularTextView
+                    android:id="@+id/docadvice_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="3dp"
+                    android:text="-"
+                    android:textColor="@color/hintcolor"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/hintcolor" />
+
+        <LinearLayout
+            android:id="@+id/medicationmain_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:elevation="0dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+
+                    android:background="@drawable/theme_background">
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="Medication"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/hintcolor"/>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/prescrption_details_recyler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <com.rxmediaapp.customfonts.CustomMediumTextView
+                        android:id="@+id/nodatavailable_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nodataavailable"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/add_circle"
+                        android:padding="15dp"
+                        android:textSize="18dp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/diagnose_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:elevation="0dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/theme_background">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <com.rxmediaapp.customfonts.CustomRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Diagnose Suggestion"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/hintcolor"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/diagnose_recyler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+            <com.rxmediaapp.customfonts.CustomRegularTextView
+                android:id="@+id/own_prescription_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Own Prescription"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

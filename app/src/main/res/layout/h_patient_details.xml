@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/theme_background">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
+
+                            <com.rxmediaapp.circularimageview.CircularImageView
+                                android:id="@+id/patient_img"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/sample_profile"/>
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:id="@+id/patientname_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text=""
+                                android:textColor="@color/colorPrimary"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="18dp" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/yashback"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp">
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Enrole ID"
+                                android:textColor="@color/hintcolor"
+                                android:layout_weight="0.5"
+                                android:textSize="13dp" />
+
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/mobile"
+                                android:textColor="@color/hintcolor"
+                                android:layout_weight="0.5"
+                                android:textSize="13dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:id="@+id/enrole_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="XYZ00786"
+                                android:textColor="@color/black"
+                                android:layout_weight="0.5"
+                                android:textSize="15dp" />
+
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:id="@+id/mobilenumbr_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/mobilenum"
+                                android:textColor="@color/black"
+                                android:layout_weight="0.5"
+                                android:textSize="15dp" />
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="15dp">
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/age"
+                                android:textColor="@color/hintcolor"
+                                android:layout_weight="0.5"
+                                android:textSize="13dp" />
+
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/sex"
+                                android:textColor="@color/hintcolor"
+                                android:layout_weight="0.5"
+                                android:textSize="13dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:id="@+id/age_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/years"
+                                android:textColor="@color/black"
+                                android:layout_weight="0.5"
+                                android:textSize="15dp" />
+
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:id="@+id/sex_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/male"
+                                android:textColor="@color/black"
+                                android:layout_weight="0.5"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="15dp">
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Problem"
+                                android:textColor="@color/hintcolor"
+                                android:textSize="13dp" />
+
+
+                            <com.rxmediaapp.customfonts.CustomRegularTextView
+                                android:id="@+id/h_problem_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/abdomain"
+                                android:textColor="@color/black"
+
+                                android:layout_marginBottom="15dp"
+                                android:textSize="15dp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <com.rxmediaapp.customfonts.CustomNormalButton
+                    android:id="@+id/prescription_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/simple_button_bg"
+                    android:gravity="center"
+                    android:textAlignment="viewStart"
+                    android:paddingLeft="10dp"
+                    android:text="@string/hospres"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    tools:ignore="RtlCompat" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/p_prescription_recyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none"/>
+
+                <com.rxmediaapp.customfonts.CustomMediumTextView
+                    android:id="@+id/nodatavailable_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nodataavailable"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/add_circle"
+                    android:padding="15dp"
+                    android:textSize="18dp"/>
+
+
+                <com.rxmediaapp.customfonts.CustomNormalButton
+                    android:id="@+id/doc_prescription_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/blue_button_bg"
+                    android:gravity="center"
+                    android:textAlignment="viewStart"
+                    android:paddingLeft="10dp"
+                    android:text="@string/othdocpres"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    tools:ignore="RtlCompat" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/p_doc_prescription_recyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

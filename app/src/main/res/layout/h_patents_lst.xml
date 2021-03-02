@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <com.rxmediaapp.customfonts.CustomEditText
+            android:id="@+id/h_patent_srch_edtx"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="13dp"
+            android:hint="Name, Mobile"
+            android:drawableRight="@drawable/search"
+            android:background="@drawable/edittext_bg"
+            android:singleLine="true"
+            android:textColor="@color/txt_clr"
+            android:textColorHint="@color/hintcolor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/h_patients_list_dr_select"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_weight="0.5"
+                android:hint="@string/seldoc"
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:drawableRight="@drawable/dropdown"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/h_test_list_status_select"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14dp"
+                android:layout_weight="0.5"
+                android:hint="Checkup Status"
+
+                android:background="@drawable/edittext_bg"
+                android:singleLine="true"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:drawableRight="@drawable/dropdown"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/p_prescription_days_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/h_patient_from_date_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/calendericon"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/mandatory_from_date"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="13dp" />
+
+            <com.rxmediaapp.customfonts.CustomEditText
+                android:id="@+id/h_patient_to_date_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/calendericon"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/mandatory_to_date"
+                android:singleLine="true"
+                android:textColor="@color/txt_clr"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.rxmediaapp.customfonts.CustomNormalButton
+                android:id="@+id/h_patient_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/doc_bg_clr"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:visibility="visible" />
+
+            <com.rxmediaapp.customfonts.CustomNormalButton
+                android:id="@+id/h_patient_cancel_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/blue_button_bg"
+                android:gravity="center"
+                android:text="@string/reset"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+
+       <!-- <com.rxmediaapp.customfonts.CustomEditText
+            android:id="@+id/h_patent_date_edtx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:hint="@string/hintdate"
+            android:drawableLeft="@drawable/calendericon"
+            android:drawablePadding="15dp"
+            android:background="@drawable/edittext_bg"
+            android:singleLine="true"
+            android:textColor="@color/txt_clr"
+            android:textColorHint="@color/hintcolor"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/h_patent_recyler"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:background="@null" />
+
+        <com.rxmediaapp.customfonts.CustomMediumTextView
+            android:id="@+id/nodatavailable_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nodataavailable"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/add_circle"
+            android:padding="15dp"
+            android:textSize="18dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#19769F</color>
+    <color name="colorPrimaryDark">#049c88</color>
+    <color name="colorAccent">#2EC0A5</color>
+
+
+    <color name="theme_color">#2EC0A5</color>
+    <color name="darkgreen_color">#049c88</color>
+    <color name="hsptl_clr">#95EDD3</color>
+
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_blue_clr">#19769F</color>
+    <color name="txt_clr">#3D3D3D</color>
+    <color name="lght_blck_clr">#51565F</color>
+    <color name="hintcolor">#95989A</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFC107</color>
+    <color name="graycolor">#D3D2D5</color>
+    <color name="yashback">#E7E5E6</color>
+
+
+    <color name="form_text_color">#95989A</color>
+    <!--<color name="form_text_color">#A39CA9</color>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //#166780
+
+</resources>

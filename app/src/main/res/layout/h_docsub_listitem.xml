@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:id="@+id/docdetails_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="true"
+
+            android:layout_margin="1dp"
+            app:cardCornerRadius="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="false"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+
+                    android:orientation="horizontal">
+
+                    <com.rxmediaapp.circularimageview.CircularImageView
+                       android:id="@+id/h_docimg"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/no_image"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <com.rxmediaapp.customfonts.CustomBoldTextView
+                        android:id="@+id/docname_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dr.Raja Shekar"
+                        android:textColor="@color/txt_clr"
+                        android:textSize="14dp" />
+
+
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:id="@+id/doctime_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1:00AM - 2:00PM"
+                        android:textColor="@color/hintcolor"
+                        android:layout_marginTop="3dp"
+                        android:textSize="12dp" />
+
+                    <com.rxmediaapp.customfonts.CustomRegularTextView
+                        android:id="@+id/docattender_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Attender : Mallesh"
+                        android:textColor="@color/hintcolor"
+                        android:layout_marginTop="3dp"
+                        android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:rotation="180"
+                        android:tint="@color/hintcolor"
+                        android:src="@drawable/back_button"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/f_edit_img"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/editimage"
+                            android:tint="@color/lght_blck_clr"
+                            android:gravity="end"/>
+
+                        <ImageView
+                            android:id="@+id/f_del_img"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:padding="2dp"
+                            android:src="@drawable/deleteicon"
+                            android:tint="@color/lght_blck_clr"
+                            android:gravity="end"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</LinearLayout>

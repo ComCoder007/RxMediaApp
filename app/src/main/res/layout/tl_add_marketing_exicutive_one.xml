@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/new_actionbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/actionbar"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/heatbeat"/>
+
+                <com.rxmediandroidapp.customfonts.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginTop="25dp"
+                    android:padding="13dp"
+                    android:hint="@string/reffrm"
+                    android:background="@drawable/theme_background"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+
+
+                <com.rxmediandroidapp.customfonts.CustomEditText
+                    android:id="@+id/p_sgnup_nme_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="13dp"
+                    android:hint="@string/name"
+                    android:background="@drawable/theme_background"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediandroidapp.customfonts.CustomEditText
+                    android:id="@+id/p_sgnup_email_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="13dp"
+                    android:hint="@string/email"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediandroidapp.customfonts.CustomEditText
+                    android:id="@+id/p_sgnup_mbile_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:inputType="number"
+                    android:layout_marginTop="20dp"
+                    android:padding="13dp"
+                    android:hint="@string/mbile_num"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+                <com.rxmediandroidapp.customfonts.CustomEditText
+                    android:id="@+id/p_sgnup_adhar_edtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="13dp"
+                    android:hint="@string/aadhar_num"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_bg"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_clr"
+                    android:textColorHint="@color/hintcolor"/>
+
+
+
+
+
+
+                <com.rxmediandroidapp.customfonts.CustomButton
+                    android:id="@+id/p_sgnup_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="25dp"
+                    android:textSize="14dp"
+                    android:textAllCaps="false"
+                    android:text="@string/sgnup"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_bg_clr"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
